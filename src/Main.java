@@ -22,7 +22,9 @@ public class Main {
             finDeCursada
         );
         Match primerParcial = new Match ("Aula 116",fechaParcial);
-   
+
+        Team profesPoo = new Team ("Profesores POO");
+        Team estudiantesPoo = new Team ("Estudiantes POO");
 
 
 
