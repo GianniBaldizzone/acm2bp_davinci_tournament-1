@@ -21,8 +21,12 @@ public class Main {
             comienzoDeCursada,
             finDeCursada
         );
+
+        Player profeSergio = new Player("Sergio Medina","Goalkeeper");
+
         Team profesPoo = new Team ("Profesores POO");
         Team estudiantesPoo = new Team ("Estudiantes POO");
+
         Match primerParcial = new Match (
                 "Aula 116",
                 fechaParcial,
