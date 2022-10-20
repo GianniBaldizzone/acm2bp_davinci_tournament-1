@@ -19,6 +19,7 @@ public class Main {
             comienzoDeCursada,
             finDeCursada
         );
+        Match primerParcial
 
 
     }
