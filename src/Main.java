@@ -13,13 +13,18 @@ public class Main {
                 11,
                 5);
 
+        Date fechaParcial= new Date(2022,9,29);
+
 
         Season torneoDaVinci = new Season(
             "Torneo 2022, 2do cuatri",
             comienzoDeCursada,
             finDeCursada
         );
-        Match primerParcial
+        Match primerParcial = new Match ("Aula 116",fechaParcial);
+   
+
+
 
 
     }
