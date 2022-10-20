@@ -15,6 +15,7 @@ public class Player{
         this.setGoalCounter(0);
         this.setMatchCounter(0);
         this.setPosition(position);
+        this.setPosition(position);
 
     }
     public void setName(String name){

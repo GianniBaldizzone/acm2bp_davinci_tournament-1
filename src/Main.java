@@ -22,9 +22,17 @@ public class Main {
             finDeCursada
         );
 
-        Player profeSergio = new Player("Sergio Medina","Goalkeeper");
+        Player profeSergio = new Player(
+                "Sergio Medina",
+                "Goalkeeper");
+        Player profeSuplente = new Player(
+                "Suplente",
+                "Defender");
 
         Team profesPoo = new Team ("Profesores POO");
+        profesPoo.addPlayer(profeSuplente);
+        profesPoo.addPlayer(profeSergio);
+
         Team estudiantesPoo = new Team ("Estudiantes POO");
 
         Match primerParcial = new Match (
