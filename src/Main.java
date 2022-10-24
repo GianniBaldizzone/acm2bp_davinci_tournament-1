@@ -23,18 +23,24 @@ public class Main {
             finDeCursada
         );
 
-        Player profeSergio = new Player(
-                "Sergio Medina",
-                "Goalkeeper");
-        Player profeSuplente = new Player(
-                "Suplente",
-                "Defender");
-
         Team profesPoo = new Team ("Profesores POO");
-        profesPoo.addPlayer(profeSuplente);
-        profesPoo.addPlayer(profeSergio);
+        profesPoo.addPlayer(new Player("Sergio Medina", "Goalkeeper"));
+        profesPoo.addPlayer(new Player("Suplente", "Defender"));
+        profesPoo.addPlayer(new Player("Victor Hugo","Forward"));
+        profesPoo.addPlayer(new Player("Daniel Web","Midfielder"));
+        profesPoo.addPlayer(new Player("Hector Fenochi","Forward"));
 
         Team estudiantesPoo = new Team ("Estudiantes POO");
+        estudiantesPoo.addPlayer(new Player("Facundo Preiss", "Forward"));
+        estudiantesPoo.addPlayer(new Player("Lucas Emens", "Defender"));
+        estudiantesPoo.addPlayer(new Player("Gianni Baldizzone","Goalkeeper"));
+        estudiantesPoo.addPlayer(new Player("Santino Fazio","Midfielder"));
+        estudiantesPoo.addPlayer(new Player("Angel Lopez","Forward"));
+
+
+
+
+
 
         Match primerParcial = new Match (
                 "Aula 116",
