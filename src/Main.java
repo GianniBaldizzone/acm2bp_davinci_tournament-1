@@ -41,7 +41,6 @@ public class Main {
 
         System.out.println(primerParcial.generateMarker());
         primerParcial.makeGoal(profesPoo, profesPoo.getPlayer().get(0)); //get(0) es un metodo para acceder al espacio 0 del ArrayList <Player>
-        System.out.println(profesPoo.getPlayer().get(0));
         System.out.println(primerParcial.generateMarker());
 
 
