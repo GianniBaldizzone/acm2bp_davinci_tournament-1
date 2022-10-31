@@ -27,4 +27,8 @@ public class Team {
     public void setPlayers(ArrayList<Player> players) {
         this.players = players;
     }
+
+    public ArrayList<Player> getPlayer(){
+       return this.players ;
+    }
 }

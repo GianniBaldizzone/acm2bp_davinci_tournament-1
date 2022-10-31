@@ -17,11 +17,7 @@ public class Main {
         Date fechaParcial= new Date(2022,9,29);
 
 
-        Season torneoDaVinci = new Season(
-            "Torneo 2022, 2do cuatri",
-            comienzoDeCursada,
-            finDeCursada
-        );
+        Season torneoDaVinci = new Season("Torneo 2022, 2do cuatri", comienzoDeCursada, finDeCursada);
 
         Team profesPoo = new Team ("Profesores POO");
         profesPoo.addPlayer(new Player("Sergio Medina", "Goalkeeper"));
@@ -37,11 +33,6 @@ public class Main {
         estudiantesPoo.addPlayer(new Player("Santino Fazio","Midfielder"));
         estudiantesPoo.addPlayer(new Player("Angel Lopez","Forward"));
 
-
-
-
-
-
         Match primerParcial = new Match (
                 "Aula 116",
                 fechaParcial,
@@ -49,6 +40,7 @@ public class Main {
                 estudiantesPoo);
 
         System.out.println(primerParcial.generateMarker());
+        primerParcial.makeGoal(profesPoo, profesPoo.getPlayer().get(0)); //get(0) es un metodo para acceder al espacio 0 del ArrayList <Player>
 
 
 

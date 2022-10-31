@@ -91,4 +91,8 @@ public class Match {
     public Team getVisitantTeam() {
         return visitantTeam;
     }
+
+    public void makeGoal(Team team, Player player){
+
+    }
 }
