@@ -4,9 +4,10 @@ class Match {
 - Date date
 - Team localTeam
 - Team visitantTeam
-- int localGoalCounter
-- int visitantGoalCounter
-+ String generateMarker()
+- MatchResult result
+~ <<Create>> Match()
+~ <<Create>> Match(String,Date)
+~ <<Create>> Match(String,Date,Team,Team)
 + void setLocation(String)
 + String getLocation()
 + void setDate(Date)
@@ -14,19 +15,16 @@ class Match {
 + void setLocalTeam(Team)
 + void setVisitantTeam(Team)
 + Team getLocalTeam()
-+ void incrementLocalCounter()
-+ int getLocalGoalCounter()
-+ void setLocalGoalCounter(int)
-+ int getVisitantGoalCounter()
-+ void setVisitantGoalCounter(int)
 + Team getVisitantTeam()
 + void makeGoal(Team,Player)
++ String generateMarker()
 }
 class Season {
 - ArrayList<Match> matchs
 - String name
 - Date startDate
 - Date endDate
+~ <<Create>> Season(String,Date,Date)
 + ArrayList<Match> getMatchesByDate(Date)
 + ArrayList<Match> addMatch(Match)
 + void setName(String)
@@ -44,6 +42,7 @@ class Main {
 class Team {
 - String name
 - ArrayList<Player> players
+~ <<Create>> Team(String)
 + void setName(String)
 + String getName()
 + void addPlayer(Player)
@@ -56,6 +55,8 @@ class Player {
 - int goalCounter
 - int matchCounter
 - Team team
+~ <<Create>> Player(String)
+~ <<Create>> Player(String,String)
 + void setName(String)
 + String getName()
 + void setPosition(String)
@@ -68,5 +69,17 @@ class Player {
 + void incrementMatchCounter()
 + Team getTeam()
 + void setTeam(Team)
+}
+class MatchResult {
+- int localGoalCounter
+- int visitantGoalCounter
+~ <<Create>> MatchResult()
++ void incrementLocalCounter()
++ void incrementVisitantCounter()
++ void setLocalGoalCounter(int)
++ int getLocalGoalCounter()
++ void setVisitantGoalCounter(int)
++ int getVisitantGoalCounter()
++ String generateMarker()
 }
 @enduml
